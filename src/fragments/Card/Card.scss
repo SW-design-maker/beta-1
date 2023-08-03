@@ -1,0 +1,110 @@
+.card {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+
+    img {
+        margin: 0 0 25px 0;
+        width: 100%;
+        height: 180px;
+    }
+
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .xit {
+            background: none;
+            color: #3ba3a9;
+            border: 1px solid #3ba3a9;
+            font-size: 10px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+
+        a {
+            font-size: 14px;
+            color: #000;
+            padding: 10px 0 30px 0;
+            min-height: 50px;
+        }
+
+        b {
+            padding: 0 0 20px 0;
+        }
+
+        .shop {
+            padding: 10px 20px;
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+            background: #d8ffd8;
+            border-radius: 8px;
+        }
+
+        .shop:hover {
+            background: #4CAF50;
+            color: #fff;
+        }
+    }
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.18);
+}
+
+@media all and (max-width: 1210px) {
+    .card {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .card {
+        width: calc(50%);
+    }
+}
+
+@media all and (max-width: 500px) {
+    .card {
+        width: 50%;
+        padding: 15px;
+
+        a {
+            img {
+                width: 100px;
+                object-fit: cover;
+                margin: 0 0 20px;
+                height: 150px;
+            }
+        }
+
+        .text {
+            width: 100%;
+
+            a {
+                font-size: 12px;
+                padding: 5px 0 10px 0;
+            }
+
+            b {
+                font-size: 14px;
+                padding: 0 0 10px;
+            }
+
+            .shop {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            .xit {
+                font-size: 8px;
+
+            }
+        }
+    }
+}

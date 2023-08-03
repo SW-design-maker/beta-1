@@ -1,0 +1,19 @@
+.carusel {
+    width: 100%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    a {
+        outline: none;
+    }
+
+    .slick-dots,
+    .slick-arrow,
+    .slick-next {
+        display: none !important;
+    }
+}

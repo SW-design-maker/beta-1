@@ -1,0 +1,225 @@
+.desc_style {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    p {
+        font-size: 18px;
+
+        span {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    b {
+        font-size: 18px;
+        color: #fff;
+        background: #468cca;
+        width: max-content;
+        padding: 2px 5px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+
+        b {
+            background: none;
+            color: #468cca;
+            margin: 0 0 10px 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+
+            p {
+                background: #468cca;
+                color: #fff;
+                width: 100px;
+                display: flex;
+                justify-content: start;
+                padding: 5px 10px;
+                border: 1px solid #fff;
+            }
+
+            p:nth-child(1) {
+                width: 320px;
+            }
+        }
+    }
+}
+
+.for_men {
+    p {
+        span {
+            color: #b30303;
+        }
+    }
+
+    b {
+        background: #b30303;
+    }
+
+    ul {
+        b {
+            color: #b30303;
+        }
+
+        .med {
+            li {
+                p {
+                    width: 200px;
+                    background: #b30303;
+                }
+            }
+
+            .number {
+                width: 100px;
+            }
+        }
+
+        .end {
+            p {
+                width: 500px !important;
+                background: #b30303;
+            }
+
+            .number {
+                width: 100px !important;
+                background: #b30303;
+            }
+        }
+    }
+}
+
+.for_ladies {
+    ul {
+        .med {
+            li {
+                p {
+                    width: 250px;
+                }
+            }
+        }
+
+        .end {
+            p {
+                width: 600px !important;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 990px) {
+    .desc_style {
+        b {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            li {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .for_ladies {
+        ul {
+            .end {
+                p {
+                    width: 250px !important;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 550px) {
+    .desc_style {
+        b {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        ul {
+            li {
+                width: 100%;
+
+                p:nth-child(1) {
+                    width: 70%;
+                }
+
+                p:nth-child(2) {
+                    width: 30%;
+                    height: auto;
+                }
+            }
+
+            .med {
+                width: 100% !important;
+
+                p:nth-child(1) {
+                    width: 70% !important;
+                }
+
+                p:nth-child(2) {
+                    width: 30%;
+                }
+            }
+
+            .end {
+                width: 100%;
+
+                .number {
+                    width: 30% !important;
+                }
+            }
+        }
+    }
+
+    .for_ladies {
+        ul {
+            .med {
+                width: 100% !important;
+
+                li {
+                    flex-direction: row;
+                    width: 100%;
+                    align-items: center;
+
+                    p {
+                        width: 100% !important;
+                        font-size: 14px;
+                    }
+
+                    .number {
+                        width: 30% !important;
+                    }
+                }
+            }
+
+            .end {
+                flex-direction: row;
+                width: 100% !important;
+
+                p {
+                    width: 100% !important;
+                    font-size: 14px;
+                }
+
+                .number {
+                    width: 30% !important;
+                }
+            }
+        }
+    }
+}

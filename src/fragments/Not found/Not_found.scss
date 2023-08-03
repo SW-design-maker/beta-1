@@ -1,0 +1,29 @@
+.not_found {
+    margin: 200px 0;
+
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        .found {
+            text-align: center;
+            color: #4CAF50;
+            padding: 20px 50px;
+            border-radius: 20px;
+            border: 1px solid #4CAF50;
+        }
+    }
+}
+
+@media all and (max-width: 990px) {
+    .not_found {
+        margin: 150px 0 100px 0;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .not_found {
+        margin: 130px 0 50px 0;
+    }
+}
