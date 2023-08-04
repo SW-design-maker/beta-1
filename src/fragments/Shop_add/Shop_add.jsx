@@ -36,7 +36,7 @@ const Shop_add = () => {
 
     const postTest = () => {
         axios.post(
-            `https://api.telegram.org/bot6309177783:AAHmewwy4T7vn16GCtjJ85DB7tVP02JitlE/sendMessage?chat_id=-1001831092010&text=${encodeURIComponent(
+            `https://api.telegram.org/bot6105553670:AAEqlItJ8zxHQ25fF8u5dsD4Hy4ecOe01Nk/sendMessage?chat_id=-1001831092010&text=${encodeURIComponent(
                 `<b>Zakazlar:</b>
     ${items.map((item) => {
                     return `                    
@@ -48,6 +48,7 @@ Jami mahsulot soni : ${item.count} ta`;
 
                 })
                     .join("")}        
+
 Mijoz ismi: ${fio}
             
 Mijoz telefon nomeri: ${category}
@@ -128,13 +129,15 @@ Mijoz manzili: ${phone_number}
                             <p>
                                 Telefon raqam:
                             </p>
-                            <input
-                                disabled={!fio}
-                                value={phone_number}
-                                onChange={(e) => setPhonenumber(e.target.value)}
-                                type="number"
-                                placeholder='+998'
-                            />
+                            <div className="send_number">
+                                <button>+998</button>
+                                <input
+                                    disabled={!fio}
+                                    value={phone_number}
+                                    onChange={(e) => setPhonenumber(e.target.value)}
+                                    type="number"
+                                />
+                            </div>
                             <p>
                                 Viloyatingiz
                             </p>
